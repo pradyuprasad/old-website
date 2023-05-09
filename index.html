@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <title> Pradyumna Prasad </title>
+      <meta charset="utf-8">
+      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather&family=Poppins:ital@1&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+    @font-face {
+        font-family: 'XCharter';
+        font-style: normal;
+        src: url('fonts/XCharter.otf');
+         font-display: swap;
+         font-weight: 400;  
+      }
+
+    @font-face {
+        font-family: 'XCharter';
+        font-style: normal;
+        src: url('fonts/XCharter-Bold.otf');
+         font-display: swap;
+         font-weight: 600;  
+      }
+
+
+    :root{
+      --sans: "Source Sans Pro";
+      --serif: "XCharter", "Charter";
+    }
+
+      main{
+        width: 100%; 
+        max-width: 45rem; 
+        display: inline-block; 
+        text-align: justify; 
+        hyphens: auto;
+        padding-bottom: 5rem;
+        font-size: 12.5px;
+        line-height: 1.4em;
+      }
+
+      aside{
+        font-family: Caveat, sans-serif;
+        position: absolute;
+        width: 10rem;
+        margin-left: -12rem;
+        font-size: 15px;
+        line-height: 1.1em;
+        transform: rotateZ(-45deg);
+      }
+
+      .rightnote{
+        margin-left: 16.5rem;
+      }
+
+      .straight{
+        transform: rotateZ(-10deg);
+      }
+
+      .meta{
+        margin-left: -5rem;
+      }
+
+      .title{
+        width: 100%;
+        text-align: center;
+        padding: 2.4em 0px 0em 0px;
+      }
+
+      h1{
+        line-height: 1.2em;
+        font-size: 4em;
+        font-weight: 200;
+        font-variant: small-caps;
+      }
+
+      .left, .right{
+        max-width: 20.3rem;
+        display: inline-block;
+        padding: 1rem;
+        vertical-align: top;
+      }
+
+      .left p + p, .right p + p{
+        text-indent: 2em;
+      }
+
+      p{
+        margin: 2px 0px;
+      }
+
+      body{
+        text-align: center; 
+        padding: 3rem 5% 2rem 5%;
+        margin: 0px;
+        line-height: 1.5em;
+        text-rendering: optimizeLegibility;
+        font-family: var(--serif);
+        font-size: 18px;
+      }
+
+      body {
+        background: linear-gradient(to bottom, rgba(150, 150, 100, 0.1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 200, 0.1) 100%);
+      }
+
+      h2{
+        font-weight: 400;
+        font-variant: small-caps;
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 1.4em;
+      }
+
+      h3{
+        font-weight: 800;
+        font-size: 1.5em;
+        margin-top: 2em;
+      }
+
+      h4{
+        font-weight: 900;
+        font-variant: small-caps;
+        font-size: 1.2em;
+        margin-top: 1.5em;
+        margin-bottom: 0.5rem;
+      }
+
+      li{
+        margin: 0.4rem 1rem;
+        padding-left: 0px;
+      }
+
+      ol{
+        padding-left: 0px;
+      }
+
+      table{
+        margin: 1rem 0em;
+      }
+
+      td, th{
+        padding: 1rem 2rem 0rem 0rem;
+        vertical-align: top;
+      }
+
+      th{
+        font-size: 1.2em;
+        padding-bottom: 0rem;
+        font-weight: 900;
+      }
+
+      td{
+        font-size: 1em;
+      }
+
+      thead th:nth-child(1) {
+        width: 37%;
+      }
+
+      thead th:nth-child(2) {
+        width: 63%;
+      }
+
+      a{
+        color: black;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+        text-decoration-thickness: 1px;
+      }
+
+      a:hover{
+        text-shadow: 0px 0px 0.5px black;
+      }
+
+      .header{
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        padding: 2rem 0rem;
+        margin-bottom: 1rem;
+      }
+
+      .header-left{
+        width: calc(100% - 21rem);
+        display: inline-block;  
+      }
+
+      .header-right{
+        width: 16.5rem;
+        padding: 0px 0rem 0px 4rem;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .header h3{
+        margin-top: 0px;
+        font-variant: small-caps;
+        border-bottom: solid 0.5px black;
+        padding-bottom: 0.5rem;
+      }
+
+      .header h4{
+        margin-bottom: 0.5em;
+      }
+
+      .collection{
+        width: 100%;
+        border: solid 1px black;
+        margin: 1rem 0rem;
+      }
+
+      .collection-title{
+        padding: 0.3rem;
+        font-variant: small-caps;
+        font-size: 1.2em;
+        border-bottom: solid 1px black;
+      }
+
+      .item{
+        width: 50%;
+        height: auto;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 0px;
+      }
+
+      .item img:hover{
+        filter: grayscale(0%);
+      }
+
+      .item img{
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+      }
+
+      .slide-out{
+        height: 15rem;
+        border: solid 1px black;
+        position: absolute;
+        margin-left: -17.4rem;
+        background: white;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+      }
+
+      .slide-out img{
+        height: 13rem;
+        margin: 1rem 0.5em;
+        border: solid 1px black;
+      }
+
+      .slide-out p{
+        display: inline-block;
+        width: 10rem;
+        vertical-align: top;
+        padding: 1rem;
+      }
+
+      .slide-out-title{
+        height: 2em;
+        font-size: 2rem;
+        transform: rotateZ(90deg);
+        width: fit-content;
+        display: inline-block;
+        position: absolute;
+      }
+
+      details{
+        border: solid 1px black;
+        padding: 0.5em 1em;
+        margin: 1rem 0rem 1rem 0rem;
+        font-size: 1.05em;
+      }
+
+      summary{
+        font-size: 1.2em;
+        padding: 0.3rem 0rem;
+      }
+
+      details[open] summary{
+        margin-bottom: 1rem;
+      }
+
+      details p{
+        text-align: left;
+      }
+
+      details img{
+        width: 100%;
+        margin: 1em 0rem;
+      }
+
+      hr{
+        margin: 2rem 0rem 0rem 0rem;
+      }
+
+      @media screen and (max-width: 1050px) {
+        aside{
+          display: none;
+        }
+
+        body{
+          padding: 3rem 3% 2rem 3%;
+          width: 94%;
+        }
+
+        .meta{
+          margin-left: 0px;
+        }
+
+      }
+
+
+      @media screen and (max-width: 740px) {
+
+      .left{
+          max-width: calc(50% - 0.6rem);
+          padding: 0px 0.5rem 0px 0rem;
+        }
+
+        .right{
+          max-width: calc(50% - 0.6rem);
+          padding: 0px 0rem 0px 0.5em;
+        }
+
+        .header-right{
+          padding-left: 3rem;
+          width: 17rem;
+        }
+
+        h2{
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+        }
+
+      }
+
+      @media screen and (max-width: 600px) {
+
+        main{
+          font-size: 14px;
+        }
+
+        body{
+          padding: 3rem 5% 2rem 5%;
+          width: 90%;
+        }
+
+      .header-left{
+        width: 100%;
+        display: inline-block;  
+      }
+
+      .header-right{
+          width: 100%;
+          padding: 2.4rem 0rem 0px 0rem;
+          display: inline-block;
+          vertical-align: top;
+      }
+
+      .left, .right{
+        max-width: 100%;
+        padding: 0px;
+      }
+
+      }
+
+    </style>
+    </head> 
+    <body>
+
+      <main>
+        <div class=meta> Personal Site, v.0.1.0. March, 2023.</div>
+        <div class=title> <h1> Pradyumna Prasad </h1></div>
+
+        <div class=header>
+            <div class=header-left>
+              <h3> ABSTRACT </h3>
+              <p> It happens all the time: you start a new project and everything goes smoothly. You have firm control of your codebase and productivity is on point. Then another project comes along, and before you know it six months have passed before you come back to that older project. Suddenly it’s not that clear anymore. What does this class do? What’s the type of this variable? Worse: now your colleagues have to build upon your work and you have a hard time giving them clear explanations. This is a common problem in software engineering. We humans have great minds but terrible memory. On occasion, I have had my writing featured on Marginal Revolution, and Byrne Hobart's "The Diff". </p> <br>
+
+              <p> <b> Keywords: </b> Economics, governance, dosa, "Yes, Minister", Singapore.</p>
+            </div>
+
+            <div class=header-right>
+              <h3> Personal Info </h3>
+
+              <p> 
+                <b> Studying: </b> NUS (2023-27) <br>
+                <b> Tweeting: </b> <a href="https://twitter.com/pradyuprasad">@PradyuPrasad</a> <br>
+                <b> Writing: </b> <a href="https://brettongoods.substack.com/">brettongoods.substack.com</a> <br>
+              </p>
+
+              <h4> Stats: </h4>
+                Words written: <i> 490,093 </i> <br>
+                Meet-ups hosted: <i> 4 </i> <br>
+                Leetcode hards completed: <i> 17 </i> <br>
+
+              <aside class="rightnote straight"> Email is more dependable than Twitter's spam filters. </aside>
+
+              <h4> Contact </h4>
+              <b> Email:</b>  hello@pradyuprasad.com 
+            </div> 
+
+        </div>
+
+
+
+
+
+
+
+        <div class=left>
+          <aside> Thinking about sidenotes as annotations. But I doubt Pradyu is going to bother messing with these... </aside>
+
+          <p> 
+          At the moment, I am...... </p>
+
+          <details>
+            <summary> Reading List (2023) </summary>
+            <p> 
+              <ol> 
+                <li> Napoleon </li>
+                <li> Linear Algebra: An Introduction </li>
+              </ol>
+            </p>
+            
+            <!-- <img src="images/wide.jpg"> -->
+           
+          </details>
+
+          <p> The significant aspect is that the actual
+message is one selected from a set of possible messages. The system must be designed to operate for each
+possible selection, not just the one which will actually be chosen since this is unknown at the time of design.
+</p>
+
+          <h2> I. Introduction </h2>
+          <p> 
+            The fonts do not stand out
+            There’s nothing gimmicky about either font. Ideally, readers won’t notice the fonts. That’s a good thing, by the way. There are far too many fonts that are inappropriate for most uses, let alone science. This article provides a good summary of the various reasons that a font may be a bad choice: illegible, out-of-date, inauthentic, or just plain ugly.
+            The fonts easily work with LaTeX
+            Changing fonts is difficult in LaTeX. Both Source Sans Pro and Palatino, however, have associated packages that make life much easier. To use Palatino, add the following single line to the preamble 
+          </p>
+
+          <h2> II. Literature Review </h2>
+
+          <p> 
+            The fonts easily work with LaTeX
+            Changing fonts is difficult in LaTeX. Both Source Sans Pro and Palatino, however, have associated packages that make life much easier. To use Palatino, add the following single line to the preamble 
+          </p>
+
+          <p> The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point. Frequently the messages have meaning; that is they refer
+          to or are correlated according to some system with certain physical or conceptual entities. These semantic
+          aspects of communication are irrelevant to the engineering problem. 
+
+       <!--  <div class=slide-out>
+          <img src="images/rectangle-book.jpg">
+          <p> Great book, if you aks me. I've never read it though. It was first published in 1949 and is an intellectual and profound analysis of the history of consciousness and its place in the ... </p>
+           <div class=slide-out-title> READING </div>
+        </div>   -->
+
+        </div>
+
+        <div class=right>
+          <p> The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point. Frequently the messages have meaning; that is they refer
+to or are correlated according to some system with certain physical or conceptual entities. These semantic
+aspects of communication are irrelevant to the engineering problem. The significant aspect is that the actual
+message is one selected from a set of possible messages. The system must be designed to operate for each
+possible selection, not just the one which will actually be chosen since this is unknown at the time of design.
+</p>
+
+        <h4> Blogroll </h4>
+
+        <p> Strange Loop Canon, Marginal Revolution, BeWrong, <a href="https://visakanv.substack.com/p/resonance-over-coherence">visa's voltaic verses</a>, </p>
+
+        <h2> III. Interests </h2>
+
+<div class=collection>
+  <div class=collection-title> Music Recommendations </div>
+  <div class=item> 
+    <img src="images/doorway.png">
+  </div><div class=item> 
+    <img src="images/flyte.png">
+  </div><div class=item> 
+    <img src="images/stop.png">
+  </div><div class=item> 
+    <img src="images/ultra.png">
+  </div>
+</div>
+
+
+<p>
+If the number of messages in the set is finite then this number or any monotonic function of this number
+can be regarded as a measure of the information produced when one message is chosen from the set, all
+choices being equally likely. As was pointed out by Hartley the most natural choice is the logarithmic
+function. Although this definition must be generalized considerably when we consider the influence of the
+statistics of the message and when we have a continuous range of messages, we will in all cases use an
+essentially logarithmic measure.
+</p>
+
+</div>
+
+<hr> 
+
+<div class=left> 
+
+    <h4> Currently Reading </h4>
+    <p> My telegram channel has a live list of stuff I'm reading/thinking about. I'm fairly seelctive about who gets in , but you're welcome to try your luck.</p>
+
+    <h2> IV. Acknowledgements </h2>
+
+    <table>
+      <thead>
+        <th> People </th> 
+        <th> Notable features </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Rohit </td>
+          <td> hmmmm </td>
+        </tr>
+
+        <tr>
+          <td> Judah </td>
+          <td> Guy who made this site you're looking at. </td>
+        </tr>
+
+      </tbody>
+    </table>
+</div>
+
+
+<div class=right>
+    <h2> V. Conclusion </h2>
+
+     <p>
+            THE recent development of various methods of modulation such as PCM and PPM which exchange
+            bandwidth for signal-to-noise ratio has intensified the interest in a general theory of communication. A
+            basis for such a theory is contained in the important papers of Nyquist1 and Hartley2 on this subject. In the
+            present paper we will extend the theory to include a number of new factors, in particular the effect of noise
+            in the channel, and the savings possible due to the statistical structure of the original message and due to the
+            nature of the final destination of the information
+          </p>
+
+    <h2> References </h2>
+
+    <p> A list of writing that has shaped my thinking. This includes writing of different lengths and formats: blog posts, tweets, books, etc. <br><br>
+
+    <b> Cowen, Tyler. </b> <a href=""> Stubborn Attachments</a>, <br><br>
+
+    <b> Alexander, Scott. </b>, Conflict Theory,
+        
+
+  </div>
+  
+  </main>
+
+    </body></html>
